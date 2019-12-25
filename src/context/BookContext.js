@@ -13,8 +13,8 @@ export const BookContextProvider = props => {
   }, [books]);
 
   return (
-    <BookContextProvider value={{ books, dispatch }}>
+    <BookContext.Provider value={{ books, dispatch }}>
       {props.children}
-    </BookContextProvider>
+    </BookContext.Provider>
   );
 };
